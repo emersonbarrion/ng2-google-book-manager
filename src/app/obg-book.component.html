@@ -1,3 +1,15 @@
-<h1>
-  {{title}}
-</h1>
+<app-sample (remove)="remove($event)"></app-sample>
+<h1>{{title}}</h1>
+<div>{{error}}</div>
+
+<!--div *ngFor="let book of favoriteBooks">
+	<h3>{{book.title}}<button (click)="removeFavoriteBook(book)">Remove to Favorites</button></h3>
+</div-->
+
+<input-debounce delay="500" placeholder="Search Books" (value)="searchBooks($event)"></input-debounce>
+
+<div *ngFor="let book of sampleBooks">
+	<h3>{{book.title}}</h3><div>{{book.id}}</div>
+	<div>{{book.description}}</div>
+	<button (click)="addFavoriteBook(book)">Add to Favorites</button>
+</div>

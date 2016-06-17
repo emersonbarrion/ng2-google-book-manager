@@ -1,0 +1,64 @@
+REQUIREMENTS:
+
+[X] Collection list
+[X] Favorite collection
+[X] Add favorite
+[X] Remove favorite
+[X] Search
+[X] Use Google book API
+[X] Use service for HTTP calls
+[] Create an SDK and package it with NPM for services
+[] Create a web component and package it with NPM
+[] Have a number of unit tests for component and sdk
+[] Multiple states
+[X] Use Observables instead of promise
+[] Multiple subscriber
+[] Use Angular Ionic
+[] Use API key for favorites
+[] Separate concerns (SDK, Smart/Dumb Components, API)
+[] Use redux pattern
+[] Add logging service
+[] Add debugging mechanism
+[] Add fixtures
+[X] Use lodash for algorithm
+[] Provide paging on search results
+
+
+
+The Target
+ 
+Build a small sample book application with the following requirements:
+· List Collection
+· List Favorite Collection
+· Add to Favorites
+· Remove from Favorites
+· Search
+ 
+The Technical Requirements
+ 
+· Use an API from google https://developers.google.com/books/docs/v1/getting_started#REST
+· Use REDUX as a Pattern (using ngrx/store https://github.com/ngrx/store & ngrx/effect https://github.com/ngrx/effects )
+· Each component / service build needs to abide to the Single Responsibility Principle
+· Use a Service for HTTP calls
+· Create an SDK and package it with npm for services (You can use the SDK skeleton to start with)
+	https://bitbucketsson.betsson.local/projects/WF/repos/obg.ng2.sdk.skeleton/browse
+· Create a Web Component and package it with npm (Again you can use the WC ion2 skeleton to start with)
+	https://bitbucketsson.betsson.local/projects/WF/repos/obg.ion2.ui.skeleton/browse
+· Have a number of unit tests for both component and sdk
+· Optional: Use the global libraries that are already based in Angular2
+ 
+To have a working setup, the individual can fork from the actual site project.
+https://bitbucketsson.betsson.local/projects/WF/repos/nazgul.site/browse
+ 
+Good reads
+https://gist.github.com/btroncone/a6e4347326749f938510
+http://blog.thoughtram.io/angular/2016/01/06/taking-advantage-of-observables-in-angular2.html
+http://blog.thoughtram.io/angular/2016/01/22/understanding-zones.html
+http://blog.thoughtram.io/angular/2015/08/20/host-and-visibility-in-angular-2-dependency-injection.html
+http://blog.thoughtram.io/angular/2016/02/22/angular-2-change-detection-explained.html
+
+
+
+
+Useful Info
+http://blog.angular-university.io/angular-2-application-architecture-building-flux-like-apps-using-redux-and-immutable-js-js/

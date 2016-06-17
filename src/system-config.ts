@@ -3,10 +3,23 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+    '@ngrx': 'vendor/@ngrx',
+    'lodash': 'vendor/lodash/lodash.js'
 };
 
 /** User packages configuration. */
 const packages: any = {
+    '@ngrx/core': {
+        main: 'index.js',
+        format: 'cjs'
+    },
+    '@ngrx/store': {
+        main: 'index.js',
+        format: 'cjs'
+    },
+    'lodash': {
+        format: 'cjs'
+    }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -29,6 +42,8 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/components/input-debounce',
+  'app/components/sample',
   /** @cli-barrel */
 ];
 
